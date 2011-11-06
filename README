@@ -1,0 +1,22 @@
+Resolume Composition Parser
+
+This app parse a Resolume® composition file (.avc) (which is an XML file)
+
+Opening a composition:
+
+  composition = ResolumeComposition.new("filename.avc")
+
+printing clips info
+
+  composition.clips_info
+  
+to copy all clips in a given directory
+
+  copy_clips(dir)
+  
+  dir must be absolute path with r/w access
+  
+  a new composition is saved with the new paths inside
+  
+NOTES:
+at the moment it only works with video clips (no audio clipsor infos are touched) this can create an inconsistent avc file
