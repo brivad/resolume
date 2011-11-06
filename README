@@ -12,11 +12,15 @@ printing clips info
   
 to copy all clips in a given directory
 
-  copy_clips(dir)
+  composition.copy_clips(dir)
   
   dir must be absolute path with r/w access
   
   a new composition is saved with the new paths inside
+  
+to save the new composition file with new paths
+
+  composition.save()
   
 NOTES:
 at the moment it only works with video clips (no audio clipsor infos are touched) this can create an inconsistent avc file

@@ -29,8 +29,10 @@ class ResolumeComposition
 
   def copy_clip(clip, dir)
     src = clip.xpath("source").first["name"]
-    FileUtils.cp(src, dir)
     filename = clip.xpath("source").first["shortName"]
+    unless File.exist?("#{dir}/#{filename}")
+      FileUtils.cp(src, dir)
+    end
     clip.xpath("source").first["name"] = "#{dir}/#{filename}"
   end
   
