@@ -44,7 +44,7 @@ class ResolumeComposition
     clips.each do |clip|
       copy_clip(clip, dir)
     end
-    name = "new_" + composition
+    name = composition + "_new.avc"
     save(name)
   end
     
