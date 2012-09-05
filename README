@@ -1,6 +1,6 @@
 Resolume Composition Tools
 
-This app parse a Resolume® composition file (.avc) (which is an XML file)
+This app parse a Resolume® v3 composition file (.avc) (which is an XML file)
 
 Opening a composition:
 
